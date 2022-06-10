@@ -1,19 +1,7 @@
 <?php
-  include('config/bd.cfg.php');
+ 
   
-  spl_autoload_register(function($nomClasse) {
-    //nomClasse = AccesBd qu'on transforme -- acces-bd --acces-bd-cls-php
-    $nomFichier = "$nomClasse.cls.php";
-    if(file_exists("modeles/$nomFichier")) {
-      include("modeles/$nomFichier");
-    }
-    else if(file_exists("controleurs/$nomFichier")) {
-      include("controleurs/$nomFichier");
-    }
-    else {
-      exit("Boommm");
-    }
-  });
+  
  
  
 ?>
